@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C2E985D72362CBA30072B48D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2E985D62362CBA30072B48D /* main.cpp */; };
+		C2E985D72362CBA30072B48D /* LinkedBagClient340.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2E985D62362CBA30072B48D /* LinkedBagClient340.cpp */; };
+		C2E985E92362CD8F0072B48D /* LinkedBag.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2E985E72362CD8F0072B48D /* LinkedBag.cpp */; };
+		C2E985EC2362CDAF0072B48D /* Node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2E985EA2362CDAF0072B48D /* Node.cpp */; };
+		C2E985EF2362CDFC0072B48D /* LinkedBag340.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2E985ED2362CDFC0072B48D /* LinkedBag340.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +27,14 @@
 
 /* Begin PBXFileReference section */
 		C2E985D32362CBA30072B48D /* LinkedBag */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LinkedBag; sourceTree = BUILT_PRODUCTS_DIR; };
-		C2E985D62362CBA30072B48D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		C2E985D62362CBA30072B48D /* LinkedBagClient340.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedBagClient340.cpp; sourceTree = "<group>"; };
+		C2E985E02362CC1C0072B48D /* LinkedBag.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkedBag.h; sourceTree = "<group>"; };
+		C2E985E42362CD270072B48D /* BagInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BagInterface.h; sourceTree = "<group>"; };
+		C2E985E52362CD430072B48D /* Include.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Include.h; sourceTree = "<group>"; };
+		C2E985E62362CD530072B48D /* Node.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
+		C2E985E72362CD8F0072B48D /* LinkedBag.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedBag.cpp; sourceTree = "<group>"; };
+		C2E985EA2362CDAF0072B48D /* Node.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Node.cpp; sourceTree = "<group>"; };
+		C2E985ED2362CDFC0072B48D /* LinkedBag340.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedBag340.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +67,14 @@
 		C2E985D52362CBA30072B48D /* LinkedBag */ = {
 			isa = PBXGroup;
 			children = (
-				C2E985D62362CBA30072B48D /* main.cpp */,
+				C2E985D62362CBA30072B48D /* LinkedBagClient340.cpp */,
+				C2E985E62362CD530072B48D /* Node.h */,
+				C2E985EA2362CDAF0072B48D /* Node.cpp */,
+				C2E985E02362CC1C0072B48D /* LinkedBag.h */,
+				C2E985E72362CD8F0072B48D /* LinkedBag.cpp */,
+				C2E985E42362CD270072B48D /* BagInterface.h */,
+				C2E985E52362CD430072B48D /* Include.h */,
+				C2E985ED2362CDFC0072B48D /* LinkedBag340.cpp */,
 			);
 			path = LinkedBag;
 			sourceTree = "<group>";
@@ -118,7 +135,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2E985D72362CBA30072B48D /* main.cpp in Sources */,
+				C2E985EC2362CDAF0072B48D /* Node.cpp in Sources */,
+				C2E985EF2362CDFC0072B48D /* LinkedBag340.cpp in Sources */,
+				C2E985D72362CBA30072B48D /* LinkedBagClient340.cpp in Sources */,
+				C2E985E92362CD8F0072B48D /* LinkedBag.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +259,7 @@
 		C2E985DB2362CBA30072B48D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -247,6 +268,7 @@
 		C2E985DC2362CBA30072B48D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
